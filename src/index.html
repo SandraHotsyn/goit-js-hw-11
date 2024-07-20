@@ -16,9 +16,11 @@
   </section>
   <section>
     <h2>Gallery</h2>
-    <input type="text" id="searchInput" placeholder="Search images..." />
-    <button id="searchButton" class="search-button">Search</button>
-    <div class="gallery" id="gallery"></div>
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Search images..." />
+      <button type="submit" id="searchButton" class="search-button">Search</button>
+      <div class="gallery" id="gallery"></div>
+    </form>
     <div id="loader" class="loader" style="display: none"></div>
     <script type="module" src="./main.js"></script>
     <script type="module" src="./js/pixabay-api.js"></script>
